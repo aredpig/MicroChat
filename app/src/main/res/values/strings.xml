@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MealShared</string>
+    <string name="username">Username</string>
+    <string name="following">Following</string>
+    <string name="follower">Follower</string>
+    <string name="post">Post</string>
+    <string name="title_activity_notification_page">NotificationPage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="friends">FRIENDS</string>
+    <string name="requests">REQUESTS</string>
+    <string name="notifications">Notifications</string>
+    <string name="post_tag_sharp">#</string>
+    <string name="title_activity_navigate_page">NavigatePage</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="album">Album</string>
+    <string name="posts">Posts</string>
+    <string name="friends2">Friends</string>
+</resources>

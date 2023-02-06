@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC300"
+    tools:context=".Activities.PostTweetActivity">
+
+    <Button
+        android:id="@+id/post_button"
+        android:layout_width="100sp"
+        android:layout_height="48sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_search_button"
+        android:text="@string/post"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_content" />
+
+    <EditText
+        android:id="@+id/post_content"
+        android:layout_width="0dp"
+        android:layout_height="400sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16sp"
+        android:background="@drawable/shape_tweet_content"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="Use '#' to add a tag."
+        android:inputType="textMultiLine"
+        android:paddingTop="24sp"
+        android:paddingLeft="24sp"
+        android:paddingRight="24sp"
+        android:paddingBottom="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/location_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Click to set your location"
+        android:textColor="#555"
+        app:layout_constraintBottom_toBottomOf="@+id/post_content"
+        app:layout_constraintEnd_toEndOf="@+id/post_content" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

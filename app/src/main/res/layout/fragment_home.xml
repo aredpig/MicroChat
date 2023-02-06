@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7EBD5">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/top_image_view"
+        android:layout_width="380sp"
+        android:layout_height="270sp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/top_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="20sp" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/single_tweet_user_pic"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:clickable="true"
+        android:layout_marginTop="130sp"
+        android:src="@drawable/cat"
+        app:layout_constraintEnd_toEndOf="@+id/top_image_view"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="@+id/top_image_view"
+        app:layout_constraintTop_toTopOf="@+id/top_image_view"
+        app:riv_corner_radius="20sp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="top_image_view,single_tweet_user_pic" />
+
+    <TextView
+        android:id="@+id/userName_main"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156sp"
+        android:layout_marginEnd="12sp"
+        android:text="@string/username"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toStartOf="@+id/single_tweet_user_pic"
+        app:layout_constraintTop_toTopOf="@+id/top_image_view" />
+
+    <TextView
+        android:id="@+id/Post_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10sp"
+        android:text="@string/post"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Follower_main"
+        app:layout_constraintEnd_toStartOf="@+id/Follower_main" />
+
+    <TextView
+        android:id="@+id/Follower_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10sp"
+        android:text="@string/follower"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Following_main"
+        app:layout_constraintEnd_toStartOf="@+id/Following_main" />
+
+    <TextView
+        android:id="@+id/Following_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15sp"
+        android:text="@string/following"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/single_tweet_user_pic"
+        app:layout_constraintTop_toBottomOf="@+id/userName_main" />
+
+    <TextView
+        android:id="@+id/num_following_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Following_main"
+        app:layout_constraintStart_toStartOf="@+id/Following_main"
+        app:layout_constraintTop_toBottomOf="@+id/Following_main" />
+
+    <TextView
+        android:id="@+id/num_follower_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Follower_main"
+        app:layout_constraintStart_toStartOf="@+id/Follower_main"
+        app:layout_constraintTop_toBottomOf="@+id/Follower_main" />
+
+    <TextView
+        android:id="@+id/num_post_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Post_main"
+        app:layout_constraintStart_toStartOf="@+id/Post_main"
+        app:layout_constraintTop_toBottomOf="@+id/Post_main" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="num_follower_main,num_following_main" />
+
+    <Button
+        android:id="@+id/main_page_post"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="40sp"
+        android:layout_marginEnd="40sp"
+        android:background="@drawable/shape_search_button"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="@+id/top_image_view"
+        app:layout_constraintTop_toTopOf="@+id/top_image_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_page_tweets"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_image_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

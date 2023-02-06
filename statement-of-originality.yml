@@ -1,0 +1,50 @@
+# for information & examples on how to fill this out correctly, see
+# https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality
+# this document has been modified for the purpose of the COMP2100/6442 group assignment.
+
+declaration: >-
+  I declare that everything I have submitted in this assignment is entirely our
+  own work, with the following exceptions:
+
+
+# add as many "name+comment" entries as necessary
+# (or remove it altogether if you haven't collaborated with anyone outside your group)
+
+
+# add as many "url+licence+comment" entries as necessary
+# (or remove it altogether if you haven't used any external code)
+code:
+    - comment: liker button
+    url: https://github.com/ChadCSong/ShineButton
+    licence: MIT
+
+    - comment: AVL Tree reference
+    url: https://www.happycoders.eu/algorithms/avl-tree-java/
+    licence: CC BY-SA 3.0
+
+    - comment: User profile avatar change
+    url: https://cloud.tencent.com/developer/article/1798080
+    licence: CC BY-SA 3.0
+
+
+
+
+# add as many "url+licence+comment" entries as necessary
+# (or remove it altogether if you haven't used any external assets)
+assets:
+  # NOTE: "Bliss" is just here as an example, you should remove it
+  - comment: kiki's cat image
+    url: https://en.wikipedia.org/wiki/Kiki%27s_Delivery_Service
+    licence: fair use
+
+# for each member, write your name and uid here
+# remove any empty "name+uid" entries
+members:
+  - name: Bofeng Chen
+    uid: u7270388
+  - name: Jiawei Li
+    uid: u6988392
+  - name: Isaac Zhang
+    uid: u7344258
+  - name: Yufeng Pan
+    uid: u7237845

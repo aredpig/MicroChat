@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7EBD5">
+
+    <Button
+        android:id="@+id/button_following"
+        android:layout_width="0dp"
+        android:layout_height="70sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/shape_button_follow"
+        android:text="@string/following"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_follower"
+        app:layout_constraintEnd_toStartOf="@+id/button_follower"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_follower"
+        android:layout_width="0dp"
+        android:layout_height="70sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16sp"
+        android:layout_marginEnd="16sp"
+        android:background="@drawable/shape_button_follow"
+        android:text="@string/follower"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_following"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_friends"
+        android:layout_width="0dp"
+        android:layout_height="70sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="16sp"
+        android:background="@drawable/shape_button_friends"
+        android:text="@string/friends"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_follower" />
+
+    <Button
+        android:id="@+id/button_requests"
+        android:layout_width="0dp"
+        android:layout_height="70sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="16sp"
+        android:background="@drawable/shape_button_requests"
+        android:text="@string/requests"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_friends" />
+
+    <TextView
+        android:id="@+id/notifications_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/notifications"
+        android:textColor="#333333"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_requests" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mealshared">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Net -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Camara -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- IO -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".Datastream.DataStreamActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.FollowerListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.FollowingListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.RequestListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.FriendsListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.MessageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.NavigatePageActivity"
+            android:exported="true"
+            android:label="@string/title_activity_navigate_page" />
+        <activity
+            android:name=".Activities.SingleTweetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UITester"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.PostTweetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
